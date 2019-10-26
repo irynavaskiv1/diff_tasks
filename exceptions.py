@@ -2,7 +2,7 @@ def ask():
     while True:
         try:
             n = int(input("Enter a number: "))
-        except:
+        except Exception:
             print("Please try again! \n ")
             continue
         else:
@@ -11,19 +11,22 @@ def ask():
             print("all ok")
 
     print("Your multiply number is: ")
-    print(n**2)
+    print(n ** 2)
 
-print(ask())
+
+ask()
 
 
 def enter_name():
     while True:
         try:
             a = int(input('Enter your number:'))
-        except:
+        except Exception:
             print('It is not number!\n')
         else:
             break
     print('Your number is:')
     print(a)
+
+
 enter_name()

@@ -28,22 +28,6 @@ def reverse(st):
 print('{2}, {0}, {1}'.format('a', 'v', 'd'))
 print('Coordinates: {latitude}, {longitude}'.format(latitude='37.24N',
                                                     longitude='-115.81W'))
-print('My name is: {name}, {surname}'.format(name= "iryna", surname ='vaskiv'))
+print('My name is: {name}, {surname}'.format(name="iryna", surname='vaskiv'))
 print('My not full name is: {fullname[4]}, {fullsurname[3]}'.
       format(fullname="iryna", fullsurname="vaskiv"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

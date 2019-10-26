@@ -5,7 +5,7 @@ def has_33(nums):
     return False
 
 
-print(has_33([6,6,8]))
+print(has_33([6, 6, 8]))
 
 
 def func_has_22(nums):
@@ -15,7 +15,7 @@ def func_has_22(nums):
     return False
 
 
-print(func_has_22([2,3,4,2,2]))
+print(func_has_22([2, 3, 4, 2, 2]))
 
 
 def last_symbol(nums):
@@ -26,12 +26,12 @@ def last_symbol(nums):
     return False
 
 
-print(last_symbol([5,3,5,3]))
+print(last_symbol([5, 3, 5, 3]))
 
 
-def iravaskiv4(a,b,c):
+def iravaskiv4(a, b, c):
     if sum([a, b, c]) <= 21:
-        return sum([a,b,c])
+        return sum([a, b, c])
 
 
 print(iravaskiv4(1, 2, 3))

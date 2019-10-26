@@ -17,23 +17,23 @@ class myfunction():
     def func(*args):
         for item in args:
             print(item)
-    func(2,4)
+    func(2, 4)
 
 
 def myfunction2(**jelly):
     print(jelly)
 
 
-myfunction2(name = 'ira', surname = 'vaskiv')
+myfunction2(name='ira', surname='vaskiv')
 
 
 def myfunction3(*args, **kwargs):
     print(args)
     print(kwargs)
-    print('i like {} {}'.format(args[0],kwargs["name"]))
+    print('i like {} {}'.format(args[0], kwargs["name"]))
 
 
-myfunction3(2, 4, name='ira',surname='vaskiv')
+myfunction3(2, 4, name='ira', surname='vaskiv')
 
 
 def animal_crackers(text):
@@ -45,7 +45,7 @@ def animal_crackers(text):
 
 
 def makes_twenty(*args):
-    return [a for a in args if a%2 ==0]
+    return [a for a in args if a % 2 == 0]
 
 
 print(makes_twenty(10.1, 30))
@@ -59,18 +59,18 @@ print(myfunction4(10, 2, 4, 10,  5))
 
 
 def myfunction5(*args):
-    return [n for n in args if n%2 == 0]
+    return [n for n in args if n % 2 == 0]
 
 
-print(myfunction5(1,2,3,4,5,6,7,8,9,10))
+print(myfunction5(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
 
 
 def myfunction6(**kwargs):
     for key, value in kwargs.items():
-        print("Surname for {} is {}".format(key,value))
+        print("Surname for {} is {}".format(key, value))
 
 
-myfunction6 (ira="vaskiv",marta="hfhfhfhf", petja="skdslkd")
+myfunction6(ira="vaskiv", marta="hfhfhfhf", petja="skdslkd")
 
 
 def print_values(**kwargs):
@@ -97,7 +97,7 @@ print(amount(1, 3, 45, 67, 8))
 
 def old_macdonald(name):
     first_half = name[:3]
-    second_half = name [3:]
+    second_half = name[3:]
     return first_half.capitalize() + second_half.capitalize()
 
 
@@ -181,7 +181,7 @@ def count_primes(num):
 
     while x <= num:
         for y in range(3, x, 2):
-            if x%y == 0:
+            if x % y == 0:
                 x += 2
                 break
         else:
@@ -196,13 +196,13 @@ print(count_primes([100]))
 
 
 def splicer(mystring):
-    if len(mystring)%2 == 0:
+    if len(mystring) % 2 == 0:
         return "EVEN"
     else:
         return mystring[0]
 
 
-print(splicer(['Andy', 'Eve','Sally']))
+print(splicer(['Andy', 'Eve', 'Sally']))
 
 
 names = ['Andy', 'Eve', 'Sally']
@@ -210,30 +210,27 @@ list(map(splicer, names))
 
 
 def square(num):
-    return num **2
+    return num ** 2
 
 
 print(square(3))
 
-square = lambda num: num **2
-print(square(5))
-
 
 def check_even(num):
-    return num%2 == 0
+    return num % 2 == 0
 
 
 print(check_even(8))
 
 
-check_even = lambda num: num%2 == 0
-print(check_even(8))
+# check_even = lambda num: num%2 == 0
+# print(check_even(8))
 
 mynums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(list(filter(lambda num: num % 2 == 0, mynums)))
 
 names = ['Ira', 'Taras', 'Maria']
-print(list(map(lambda x:x[::-1],names)))
+print(list(map(lambda x: x[::-1], names)))
 
 
 # функція яка перемножує значення (записати)
@@ -242,6 +239,8 @@ def multiply(numbers):
     for x in numbers:
         total *= x
     return total
+
+
 print(multiply([9, -3, 4]))
 
 
@@ -256,6 +255,7 @@ def display_board(board):
     print(board[4] + '|' + board[5] + '|' + board[6])
     print('------')
     print(board[1] + '|' + board[2] + '|' + board[3])
+
 
 test_board = ['#', 'X', 'O'', X', 'O', 'X', 'O', 'X', 'O', 'X']
 display_board(test_board)
@@ -285,7 +285,7 @@ class Circle:
         self.radius = radius
 
     def get_circle(self):
-       return self.radius * self.pi * 3
+        return self.radius * self.pi * 3
 
 
 my_circle = Circle()
@@ -337,6 +337,7 @@ class Cat():
     def speak(self):
         return self.name + " says meow"
 
+
 niko = Cat("Niko")
 felix = Dog("Felix")
 
@@ -357,7 +358,7 @@ pet_speak(niko)
 
 
 # special methods
-class Book():
+class Book:
 
     def __init__(self, title, author, pages):
         self.title = title
@@ -366,7 +367,6 @@ class Book():
 
 
 b = Book('Python roks', 'Jose', 200)
-#де в пам'яті зберігається b
 print(b)
 
 
@@ -426,9 +426,9 @@ add(10, 20)
 
 class exception1:
     try:
-        f = open('testfile','r')
+        f = open('testfile', 'r')
         f.read()
-    except:
+    except Exception:
         print('This is a exeption')
 
     finally:
@@ -438,8 +438,8 @@ class exception1:
 def ask_for_int():
     while True:
         try:
-            result = int(input('Please provide name: '))
-        except:
+            input('Please provide name: ')
+        except Exception:
             print('Whoops! That is not a mane')
             continue
         else:
@@ -456,7 +456,7 @@ try:
     x = 5
     y = 1
     z = x/y
-except:
+except Exception:
     print("Error")
 finally:
     print("All done!")
@@ -473,6 +473,7 @@ class TestCap(unittest.TestCase):
         text = 'monty python'
         result = cap.cap_text(text)
         self.assertEquals(result, 'Monty Python')
+
 
 if __name__ == '__main__':
     unittest.main()
@@ -504,7 +505,7 @@ def hello(name="Jose"):
     print(greet())
 
     def ira():
-        a = int(input('Hello enter name'))
+        int(input('Hello enter name'))
     print(ira())
 
 

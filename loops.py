@@ -8,26 +8,25 @@ class loops:
 
 
 class loopsnumber:
-     x=0
+    x = 0
+    while x < 9:
+        if x == 3:
+            break
+        print(f"The {x} is number")
+        x = x + 1
 
-     while x<9:
-         if x == 3:
-           break
-         print(f"The {x} is number")
-         x=x+1
 
-
-class loop:
+class loop1:
     word = 'abcd'
 
-    for index,letter in enumerate(word):
+    for index, letter in enumerate(word):
         print(index, letter)
 
 
 index_count = 0
 
 for letter in 'abcde':
-    print('At index {} the letter is {}'.format(index_count,letter))
+    print('At index {} the letter is {}'.format(index_count, letter))
 
 list1 = [1, 3, 4, 5, 6]
 list2 = ['a', 'd', 'f', 'g', 'k']
@@ -41,7 +40,7 @@ for letter in mystring:
     mylist.append(letter)
     print(mylist)
 
-mylist =[x**2 for x in range(0, 11) if x%2 == 0]
+mylist = [x**2 for x in range(0, 11) if x % 2 == 0]
 print(mylist)
 
 mylist = []

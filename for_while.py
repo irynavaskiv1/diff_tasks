@@ -45,14 +45,6 @@ else:
     print('the end')
 
 
-my_list = [1, 3, 4, 6, 7]
-for i in my_list:
-    if i % 2 == 0:
-      print(' в листі є парні значення')
-      break
-else:
-    print('кінець')
-
 for var in "string":
     if var == 's':
         print(var)
@@ -95,7 +87,6 @@ while i < len(iras_list):
     iras_list[i] += 10
     i += 1
 print(iras_list)
-
 
 
 iras_list = [23, 45, 56.9, 56]
@@ -153,4 +144,3 @@ for i in range(len(fruit)):
 
 for x in 1, 3, 4:
     print(x**2, end=' ')
-

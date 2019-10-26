@@ -16,7 +16,7 @@ print(min(your_list))
 my_list = range(1, 11)
 for i in my_list:
     if i % 2 == 0:
-      print(' в листі є парні значення')
+        print('в листі є парні значення')
 else:
     print('кінець')
 
@@ -24,7 +24,7 @@ else:
 my_list = range(1, 11)
 for i in my_list:
     if i % 3 == 0:
-      print(' в листі є непарні значення')
+        print(' в листі є непарні значення')
 else:
     print('кінець')
 
@@ -32,7 +32,7 @@ else:
 my_list = range(1, 11)
 for i in my_list:
     if i % 3 != 0 and i % 2 != 0:
-      print(' є значення, які не діляться на 2  і на 3')
+        print(' є значення, які не діляться на 2  і на 3')
 else:
     print('кінець')
 
