@@ -1,5 +1,11 @@
-# є можливість імпортувати і запускати файл в stand alone форматі
-class Person:
+from classtools import AttrDisplay
+
+
+class Person(AttrDisplay):
+    """
+    є можливість імпортувати і запускати файл в stand alone форматі
+    створює і обробляє інформацію про людей
+    """
 
     def __init__(self, name, job=None, pay=0):
         self.name = name
@@ -17,6 +23,9 @@ class Person:
 
 
 class Manager(Person):
+    """
+    версія класу Person, адаптована в відповідності до вимог
+    """
 
     def __init__(self, name, pay):
         Person.__init__(self, name, 'mgr', pay)
@@ -76,7 +85,7 @@ class Department:
             print(person)
 
 
-development = Department(bob)
-development.addMember(sue)
-development.giveRaise(0.10)
-development.showAll()
+# development = Department(bob)
+# development.addMember(sue)
+# development.giveRaise(0.10)
+# development.showAll()
