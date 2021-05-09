@@ -1,8 +1,7 @@
 import json
-import multiprocessing
 import unittest
-
 import requests
+import multiprocessing
 
 from main import run
 
@@ -11,16 +10,17 @@ PORT = 8765
 
 HOST = f"http://{DOMAIN}:{PORT}"
 
-# process = multiprocessing.Process(target=run, kwargs={"host": DOMAIN, "port": PORT})
-#
-#
-# def setUpModule():
-#     print('start process---')
-#     process.start()
-#
-#
-# def tearDownModule():
-#     process.terminate()
+process = multiprocessing.Process(target=run, kwargs={"host": DOMAIN, "port": PORT})
+
+
+def setUpModule():
+    print('start process---')
+    process.start()
+
+
+def tearDownModule():
+    process.terminate()
+
 
 class UserTestGET(unittest.TestCase):
     def setUp(self):
