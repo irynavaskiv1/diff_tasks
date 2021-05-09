@@ -5,7 +5,7 @@ class Methods:
 
     def smeth(x):
         print(x)
-        
+
     def cmeth(cls, x):
         print(cls, x)
 
