@@ -1,4 +1,3 @@
-
 class MixedNames:
     data = 'spam'
 
@@ -7,6 +6,7 @@ class MixedNames:
 
     def display(self):
         print(self.data, MixedNames.data)
+
 
 m = MixedNames(1)
 m.display()

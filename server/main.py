@@ -1,5 +1,4 @@
 import json
-import logging
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 USERS_LIST = [
@@ -37,7 +36,6 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         content_length = int(self.headers['Content-Length'])
         return json.loads(self.rfile.read(content_length).decode('utf-8'))
 
-
     def do_GET(self):
 
         # test_get_all_users
@@ -53,7 +51,6 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             self._set_response(status_code=400, body={"error": "User not found"})
         else:
             self._set_response(418)
-
 
     def do_POST(self):
 
@@ -72,7 +69,6 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             else:
                 self._set_response(status_code=400, body={})
 
-
         elif self.path == "/user/createWithList":
             body = self._pars_body()
 
@@ -87,7 +83,6 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             # test_create_user_not_valid_data
             else:
                 self._set_response(status_code=400, body={})
-
 
     def do_PUT(self):
 
@@ -107,7 +102,6 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         elif self.path == "/user/user_not_found":
             self._set_response(
                 status_code=404, body={"error": "User not found"})
-
 
     def do_DELETE(self):
         id_1 = 1

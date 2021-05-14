@@ -1,5 +1,5 @@
 class Singleton:
-    obj = None # attribute for storing a singe copy
+    obj = None  # attribute for storing a singe copy
 
     def __new__(cls, *args, **kwargs):
         print(type(cls))
@@ -8,9 +8,9 @@ class Singleton:
             cls.obj = object.__new__(cls, *args, **kwargs)
         return cls.obj # will return Singleton
 
-
     def __init__(self):
         print('_init__', type(self))
+
 
 s1 = Singleton()
 print()

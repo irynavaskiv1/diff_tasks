@@ -6,4 +6,3 @@ class Foo(object):
 
 print(Foo.__class__)  # <class 'type'>
 f = Foo(1, y=2)
-

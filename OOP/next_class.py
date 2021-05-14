@@ -1,4 +1,3 @@
-
 class NextClass:
     """
     printer посилається на обєкт функції, створює обєкт всередині області
@@ -8,6 +7,7 @@ class NextClass:
     def printer(self, text):
         self.text = text
         print(self.text)
+
 
 # виклик через інстанс
 x = NextClass()

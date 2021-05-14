@@ -1,5 +1,5 @@
 import unittest
-from tasks import cap
+from string import cap
 
 
 def dog_check(mystring):

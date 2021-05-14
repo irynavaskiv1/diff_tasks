@@ -27,10 +27,3 @@ if __name__ == '__main__':
     obj = C()
     print(obj.X)
     print(C.X)
-
-
-
-
-
-
-

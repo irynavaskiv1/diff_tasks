@@ -1,4 +1,3 @@
-
 class tracer:
     def __init__(self, func):
         self.calls = 0
@@ -13,4 +12,3 @@ class tracer:
 @tracer
 def spam(a, b, c):
     print(a, b, c)
-
