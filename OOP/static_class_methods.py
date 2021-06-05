@@ -9,5 +9,5 @@ class Methods:
     def cmeth(cls, x):
         print(cls, x)
 
-    smeth = staticmethod(smeth) # same like @staticmethod
-    cmeth = classmethod(cmeth) # same like @classmethod
+    smeth = staticmethod(smeth)  # same like @staticmethod
+    cmeth = classmethod(cmeth)  # same like @classmethod

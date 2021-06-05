@@ -3,7 +3,7 @@ class Singleton:
 
     def __new__(cls, *args, **kwargs):
         print(type(cls))
-        if cls.obj is None: # it will work once
+        if cls.obj is None:  # it will work once
             print('creating an object')
             cls.obj = object.__new__(cls, *args, **kwargs)
         return cls.obj # will return Singleton

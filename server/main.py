@@ -14,6 +14,7 @@ USERS_LIST = [
 USERS_KEYS = {'username', 'firstName', 'lastName', 'email', 'password'}
 USERS_KEYS_POST = {'id', 'username', 'firstName', 'lastName', 'email', 'password'}
 
+
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
     def _set_response(self, status_code=200, body=None):

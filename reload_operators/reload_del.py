@@ -6,4 +6,5 @@ class Life:
     def __del__(self):
         print('Bye ', self.name)
 
+
 ira = Life('Ira')
