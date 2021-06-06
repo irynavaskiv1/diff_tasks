@@ -1,4 +1,4 @@
-from OOP.person import Person, Manager
+from python.OOP.person import Person, Manager
 import shelve
 
 
