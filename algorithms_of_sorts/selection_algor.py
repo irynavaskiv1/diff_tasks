@@ -1,4 +1,4 @@
-def selection_sort(nums):
+def selection_algor(nums):
     #  i -> кількість відсортованих значень
     for i in range(len(nums)):
         lowest_value_index = i  # допустимо, що найменший елемент- перший
@@ -9,5 +9,5 @@ def selection_sort(nums):
 
 
 random_list_of_nums = [12, 8, 3, 20, 11]
-selection_sort(random_list_of_nums)
+selection_algor(random_list_of_nums)
 print(random_list_of_nums)
