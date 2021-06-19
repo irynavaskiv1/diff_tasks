@@ -64,7 +64,7 @@ else:
 
 
 # task 4.2
-# comprehention
+# comprehension
 
 user_factorial = int(input('Enter your number: '))
 factorial = 1
