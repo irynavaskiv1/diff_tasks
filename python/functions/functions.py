@@ -1,5 +1,4 @@
 import unittest
-from string import cap
 
 
 def dog_check(mystring):
