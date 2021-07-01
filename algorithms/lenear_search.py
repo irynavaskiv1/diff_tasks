@@ -6,6 +6,6 @@ def lenear_search(input_list, x):
 
 
 test_list = ['v', 'a', 's', 'k', 'i', 'v']
-find_value = 'k'
+find_value = 'i'
 
 print(lenear_search(test_list, find_value))
