@@ -11,3 +11,25 @@ def selection_algor(nums):
 random_list_of_nums = [12, 8, 3, 20, 11]
 selection_algor(random_list_of_nums)
 print(random_list_of_nums)
+
+
+#____________________________________________________________________________________________________________
+def findSmallest(inputes_list):
+    smallest = inputes_list[0]
+    smallest_index = 0
+    for index in range(1, len(inputes_list)):
+        if inputes_list[index] < smallest:
+            smallest = inputes_list[index]
+            smallest_index = index
+    return smallest_index
+
+
+def selection_sort(input_list):
+    new_list = []
+    for i in range(len(input_list)):
+        smallest = findSmallest(input_list)
+        new_list.append(input_list.pop(smallest))
+    return new_list
+
+
+print(selection_sort([2, 6, 12, 10]))

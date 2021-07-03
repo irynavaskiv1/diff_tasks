@@ -1,5 +1,5 @@
 def partition(nums, low, high):
-    pivot = nums[(low + high) // 2]  # вибираємо опорний елемент (вибираємо середній, можна перший бо останній)
+    pivot = nums[(low + high) // 2]  # choose a support element (choose the middle, you can first or last)
     i = low - 1
     j = high + 1
 
@@ -7,19 +7,15 @@ def partition(nums, low, high):
         i += 1
         while nums[i] < pivot:
             i += 1
-
         j -= 1
         while nums[j] > pivot:
             j -= 1
-
         if i >= j:
             return j
-
-        nums[i], nums[j] = nums[j], nums[i]  # свайпаємо елементи по індексах
+        nums[i], nums[j] = nums[j], nums[i]
 
 
 def quick_sort(nums):
-    # створюємо додаткову функцію, якавикликається рекурсивно
     def _quick_sort(items, low, high):
         if low < high:
             split_index = partition(items, low, high)
