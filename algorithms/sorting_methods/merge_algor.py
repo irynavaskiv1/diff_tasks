@@ -1,6 +1,6 @@
 def merge_algor(myList):
     if len(myList) > 1:
-        mid = len(myList) // 2  # визначаємо опорну точку
+        mid = len(myList) // 2  # get the main point
         left = myList[:mid]
         right = myList[mid:]
 
@@ -9,8 +9,7 @@ def merge_algor(myList):
 
         i = 0
         j = 0
-        k = 0  # ітерація по головному лісту
-
+        k = 0  # iteration by main list
         while i < len(left) and j < len(right):
             if left[i] <= right[j]:
                 myList[k] = left[i]
@@ -18,7 +17,7 @@ def merge_algor(myList):
             else:
                 myList[k] = right[j]
                 j += 1
-            k += 1  # рухаємося по наступному слоті
+            k += 1  # by the next slot
 
         while i < len(left):
             myList[k] = left[i]

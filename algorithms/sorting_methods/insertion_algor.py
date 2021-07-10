@@ -1,11 +1,16 @@
 def insertion_algor(nums):
-    for i in range(1, len(nums)):  # починаємо з 2-го елемента, думаємо, що 1 відсортований
-        item_to_insert = nums[i]   # зберігаємо посилання на попередній елемент
+    """
+    This sorting method like select a card and insert to correct position.
+    :param nums: list
+    :return: sorted list
+    """
+    for i in range(1, len(nums)):
+        item_to_insert = nums[i]
         j = i - 1
-        while j >= 0 and nums[j] > item_to_insert:  # ел-ти відсортованого ел сунемо вперед, якщо він > ел для вставки
+        while j >= 0 and nums[j] > item_to_insert:
             nums[j + 1] = nums[j]
             j -= 1
-        nums[j + 1] = item_to_insert  # вставляємо елемент
+        nums[j + 1] = item_to_insert
 
 
 random_list_of_nums = [9, 1, 15, 28, 6]
