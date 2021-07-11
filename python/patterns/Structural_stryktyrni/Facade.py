@@ -2,13 +2,6 @@ from __future__ import annotations
 
 
 class Facade:
-    """
-    The Facade class provides a simple interface to the complex logic of one or
-    several subsystems. The Facade delegates the client requests to the
-    appropriate objects within the subsystem. The Facade is also responsible for
-    managing their lifecycle. All of this shields the client from the undesired
-    complexity of the subsystem.
-    """
 
     def __init__(self, subsystem1: Subsystem1, subsystem2: Subsystem2) -> None:
         """
