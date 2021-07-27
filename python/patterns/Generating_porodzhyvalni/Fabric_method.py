@@ -8,7 +8,7 @@ class People(ABC):
     def factory_method(self):
         pass
 
-    def what_peple_do(self) -> str:
+    def what_people_do(self) -> str:
         people_instance = self.factory_method()
         result = f"Creator: The same creator's code has just worked with {people_instance.operation()}"
         return result
@@ -43,7 +43,7 @@ class Drive(Action):
 
 def client_code(people: People) -> None:
     print(f"Client: I'm not aware of the people's class, but it still works.\n"
-          f"{people.what_peple_do()}", end="")
+          f"{people.what_people_do()}", end="")
 
 
 if __name__ == "__main__":
