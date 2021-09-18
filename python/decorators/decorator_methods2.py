@@ -1,0 +1,3 @@
+
+def decorator(func):
+    pass
