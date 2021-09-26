@@ -1,4 +1,6 @@
 # 1. Check if list contains integer x
+import time
+
 l = [1, 2, 3]
 print(1 in l)
 
@@ -82,3 +84,7 @@ l4.pop()
 # as a queue
 l4.insert(5, 6)
 l4.pop()
+
+# 10. Code for get current time
+currecttime = time.localtime()
+print('Current time is: ', currecttime)
