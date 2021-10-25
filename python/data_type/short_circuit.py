@@ -1,6 +1,5 @@
 def check(i):
-    print("vaskiv")
-
+    print("check")
     return i
 
 
@@ -14,8 +13,7 @@ print(10 < 11 > check(12))
 
 
 def check2(i):
-    print("vaskiv2")
-
+    print("check2")
     return i
 
 
