@@ -13,13 +13,14 @@ def calculatePerimeter(l):
 def calculateArea(l):
     return l*l
 
+
 expression = input("Type a function: ")
 
-for l in range(1, 5):
+for _ in range(1, 5):
     if expression == 'calculatePerimeter(l)':
-        print("If length is ", l, ", Perimeter = ", eval(expression))
+        print("If length is ", _, ", Perimeter = ", eval(expression))
     elif expression == 'calculateArea(l)':
-        print("If length is ", l, ", Area = ", eval(expression))
+        print("If length is ", _, ", Area = ", eval(expression))
     else:
         print('Wrong Function')
         break
