@@ -18,7 +18,8 @@ class Player:
     @lvl.setter
     def lvl(self, numeric):
         self.__lvl += Player.__typeTest(numeric)
-        if self.__lvl >= 100: self.__lvl = 100
+        if self.__lvl >= 100:
+            self.__lvl = 100
 
     @classmethod
     def set_cls_field(cls, lvl=1, health=100):
