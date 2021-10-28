@@ -14,3 +14,4 @@ def spam(a, b, c):
     print(a, b, c)
 
 
+spam(10, 20, 30)
