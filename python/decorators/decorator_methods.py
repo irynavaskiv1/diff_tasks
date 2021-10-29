@@ -11,7 +11,7 @@ class Player:
         self.__health = Player.__HEALTH
         self.__born = dt.now()
 
-    @property  # getter
+    @property
     def lvl(self):
         return self.__lvl, f'{dt.now() - self.__born}'
 
