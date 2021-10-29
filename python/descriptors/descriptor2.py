@@ -1,25 +1,35 @@
-class DescSquare:
+class Property:
 
-    def __init__(self, start):
-        self.value = start
+    def __init__(self, fget=None, fdel=None, fset=None, doc=None):
+        self.fget = fget
+        self.fdel = fdel
+        self.fset = fset
+        self.__doc__ = doc
 
-    def __get__(self, instance, owner):
-        return self.value ** 2
+    def __get__(self, instance, instancetype=None):
+        if instance is None:
+            return self
+        if self.fget is None:
+            raise AttributeError('can not get attribute')
+        return self.fget(instance)
 
     def __set__(self, instance, value):
-        self.value = value
+        if self.fset is None:
+            raise AttributeError('can not set attribute')
+        return self.fset(instance)
+
+    def __del__(self, instance):
+        if self.fdel is None:
+            raise AttributeError('can not del attribute')
+        return self.fdel(instance)
 
 
-class Client1:
-    x = DescSquare(3)
+class Vaskiv:
 
+    def getName(self):
+        pass
 
-class Client2:
-    x = DescSquare(10)
+    def setName(self, value):
+        pass
 
-
-c1 = Client1()
-c2 = Client2()
-
-print(c1.x)  # 3 ** 2
-print(c2.x)  # 10 ** 2
+    name = Property(getName(), setName())
