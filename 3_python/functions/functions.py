@@ -464,12 +464,12 @@ finally:
 class TestCap(unittest.TestCase):
 
     def test_one_world(self):
-        text = 'python'
+        text = '3_python'
         result = cap.cap_text(text)
         self.assertEquals(result, 'Python')
 
     def test_multiple_words(self):
-        text = 'monty python'
+        text = 'monty 3_python'
         result = cap.cap_text(text)
         self.assertEquals(result, 'Monty Python')
 
