@@ -1,1 +1,0 @@
-myfile = open(r'')
