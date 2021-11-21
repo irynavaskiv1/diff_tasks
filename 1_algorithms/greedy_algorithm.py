@@ -10,6 +10,11 @@ stations["kfive"] = set(["ca", "az"])
 final_stations = set()
 
 while states_needed:
+  """
+  A greedy algorithm is a simple, intuitive algorithm that is used in optimization problems. 
+  The algorithm makes the optimal choice at each step as it attempts to find the overall optimal 
+  way to solve the entire problem.
+  """
   best_station = None
   states_covered = set()
   for station, states_for_station in stations.items():
