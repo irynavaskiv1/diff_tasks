@@ -1,8 +1,6 @@
 def insertion_algor(nums):
     """
     This sorting method like select a card and insert to correct position.
-    :param nums: list
-    :return: sorted list
     """
     for i in range(1, len(nums)):
         item_to_insert = nums[i]

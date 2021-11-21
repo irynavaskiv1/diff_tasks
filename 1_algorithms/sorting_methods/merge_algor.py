@@ -1,4 +1,8 @@
 def merge_algor(myList):
+    """
+    Most implementations produce a stable sort, which means that the order of equal elements is the same in the
+    input and output.
+    """
     if len(myList) > 1:
         mid = len(myList) // 2  # get the main point
         left = myList[:mid]

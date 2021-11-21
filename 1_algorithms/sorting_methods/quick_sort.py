@@ -1,4 +1,8 @@
 def partition(nums, low, high):
+    """
+    It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays,
+    according to whether they are less than or greater than the pivot.
+    """
     pivot = nums[(low + high) // 2]  # choose a support element (choose the middle, you can first or last)
     i = low - 1
     j = high + 1
