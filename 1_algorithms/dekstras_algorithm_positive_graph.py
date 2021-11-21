@@ -31,6 +31,10 @@ processed = []
 
 
 def find_lowest_cost_node(costs):
+    """
+    This is an algorithm for finding the shortest paths between nodes in a graph, which may represent,
+    for example, road networks. Works only in positive graph.
+    """
     lowest_cost = float("inf")
     lowest_cost_node = None
     for node in costs:

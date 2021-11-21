@@ -1,4 +1,8 @@
 class BinarySearch:
+    """
+    Binary search works on sorted arrays.
+    Binary search begins by comparing an element in the middle of the array with the target value.
+    """
 
     def search_iterative(self, list, item):
         low = 0
