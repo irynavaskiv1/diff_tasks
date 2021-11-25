@@ -20,8 +20,6 @@ class Singleton(metaclass=SingletonMeta):
         executed on its instance.
         """
 
-        # ...
-
 
 if __name__ == "__main__":
 
