@@ -1,4 +1,4 @@
-from python.OOP.person import Person
+from person import Person
 
 
 class Manager(Person):
