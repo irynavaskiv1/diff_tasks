@@ -20,10 +20,6 @@ class NameSurname(Name, Surname):
 
 
 def client_code(name: "Name") -> None:
-    """
-    The client code supports all classes that follow the Target interface.
-    """
-
     print(name.create_name(), end="")
 
 
@@ -31,11 +27,9 @@ if __name__ == "__main__":
     print("Client: I can work just fine with the Target objects:")
     name = Name()
     client_code(name)
-    print("\n")
 
     surname = Surname()
-    print("Client: The Adaptee class has a weird interface. "
-          "See, I don't understand it:")
+    print("Client: The Adaptee class has a weird interface.")
     print(f"Adaptee: {surname.create_surname()}", end="\n\n")
 
     print("Client: But I can work with it via the Adapter:")
