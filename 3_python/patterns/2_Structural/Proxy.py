@@ -41,8 +41,6 @@ if __name__ == "__main__":
     real_subjects = Action()
     client_code(real_subjects)
 
-    print("")
-
     print("Client: Executing the same client code with a proxy:")
     real_subjects = Action()
     proxy = ProxyAction(real_subjects)
