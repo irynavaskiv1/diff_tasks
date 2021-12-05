@@ -20,11 +20,13 @@ class Player:
         self.__lvl += Player.__typeTest(numeric)
         if self.__lvl >= 100:
             self.__lvl = 100
+        print(f'{self.lvl.__name__} function uses')
 
     @classmethod
     def set_cls_field(cls, lvl=1, health=100):
         cls.__LVL = Player.__typeTest(lvl)
         cls.__HEALTH = Player.__typeTest(health)
+        print(f'{cls.set_cls_field.__name__} function uses')
 
     @staticmethod
     def __typeTest(value):
@@ -32,3 +34,7 @@ class Player:
             return value
         else:
             raise TypeError('Must be int')
+
+
+proto = Player()
+print(proto.lvl)
