@@ -12,5 +12,3 @@ print(Counter({'A': 3, 'B': 5, 'C': 2, '33': 'ira'}))
 
 # with keyword arguments
 print(Counter(A=3, B=5, C=2))
-
-
