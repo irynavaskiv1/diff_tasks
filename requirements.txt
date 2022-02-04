@@ -1,6 +1,7 @@
-pip 21.2.4
-setuptools 49.2.1
-speedtest-cli 2.1.3
-pygorithm-1.0.4
+pip
+setuptools
+speedtest-cli
+pygorithm
 flake8
 isort
+requests
