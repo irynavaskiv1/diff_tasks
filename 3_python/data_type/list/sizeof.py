@@ -7,3 +7,5 @@ print(b.__sizeof__())
 # use method
 d = dict.fromkeys(a)
 d2 = dict.fromkeys(b)
+print(d)
+print(d2)
