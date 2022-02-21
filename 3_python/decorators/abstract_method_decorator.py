@@ -18,7 +18,3 @@ class Sub(Super):
         print('spam')
 
 # тепер зможемо, бо ми дали реалізацію методу
-
-
-x = Sub()
-x.delegate()
