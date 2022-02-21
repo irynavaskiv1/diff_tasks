@@ -2,12 +2,12 @@ X = 11  # глобальне імя в модулі
 
 
 def f():
-    print(X)
+    print('def f x=', X)
 
 
 def g():
     X = 22
-    print(X)
+    print('def g x=', X)
 
 
 class C:
