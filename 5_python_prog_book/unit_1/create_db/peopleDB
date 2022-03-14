@@ -1,0 +1,14 @@
+name => Bob
+age => 25
+pay => 3000
+job => dev
+name => Sue
+age => 20
+pay => 5000
+job => qa
+name => Jack
+age => 25
+pay => 3000
+name => Monika
+age => 22
+pay => 4000
