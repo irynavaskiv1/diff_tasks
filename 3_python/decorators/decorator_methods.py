@@ -36,5 +36,6 @@ class Player:
             raise TypeError('Must be int')
 
 
-proto = Player()
-print(proto.lvl)
+p = Player()
+print(p.lvl)  # get getter descriptor
+print(p.set_cls_field())  # get @classmethod
