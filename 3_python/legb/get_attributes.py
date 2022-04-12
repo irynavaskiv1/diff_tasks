@@ -23,4 +23,4 @@ print("u2.custom_pass(10)", z)  # 10
 
 u3 = User
 u3.new_attr1 = 'value1'
-#u3.__dict__['new_attr2'] = 'value'  # TypeError: 'mappingproxy' object does not support item assignment
+# u3.__dict__['new_attr2'] = 'value'  # TypeError: 'mappingproxy' object does not support item assignment
