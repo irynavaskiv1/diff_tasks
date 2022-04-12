@@ -6,8 +6,8 @@ def stuff(file=None):
     raise MyError()
 
 
-file = open('data.txt', 'w')
+my_file = open('data.txt', 'w')
 try:
-    stuff(file=file)
+    stuff(file=my_file)
 finally:
-    file.close()
+    my_file.close()
