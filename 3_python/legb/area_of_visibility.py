@@ -1,4 +1,4 @@
-X = 11  # глобальне імя в модулі
+X = 11  # global name inside module
 
 
 def f():
@@ -25,5 +25,5 @@ if __name__ == '__main__':
     print(X)
 
     obj = C()
-    print(obj.X)
-    print(C.X)
+    print('obj.X', obj.X)
+    print('obj.C.X', C.X)
