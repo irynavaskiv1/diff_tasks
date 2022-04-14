@@ -5,9 +5,9 @@ class Dog:
         self.age = age
 
     def __call__(self, *args, **kwargs):
-        print('Hello')
+        print(' __call__ magic method ')
 
 
 badik = Dog('Badik', age=1)
 if callable(badik):
-    badik("hello")
+    badik("Callable Baadik: Hello")
