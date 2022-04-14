@@ -1,5 +1,3 @@
-# reload __init__
-
 class Number:
     def __init__(self, start):
         self.data = start

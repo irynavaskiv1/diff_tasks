@@ -7,4 +7,4 @@ class Life:
         print('Bye ', self.name)
 
 
-ira = Life('Ira')
+l = Life('old life')
