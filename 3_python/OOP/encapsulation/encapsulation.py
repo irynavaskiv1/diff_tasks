@@ -10,9 +10,11 @@ class Grabber:
 
 
 gr = Grabber()
-print(gr._user)
+print('gr.name', gr.name)
+print('gr._user', gr._user)
 # print(gr.__password)  # AttributeError: 'Grabber' object has no attribute '__password'
-print(gr.__dict__)
-print(gr._Grabber__password)  # AttributeError: 'Grabber' object has no attribute '__password'
 
+
+print('gr.__dict__', gr.__dict__)
+print('gr._Grabber__password', gr._Grabber__password)  # AttributeError: 'Grabber' object has no attribute '__password'
 print(gr.show_password())
