@@ -1,4 +1,5 @@
 class Name:
+
     def __get__(self, instance, owner):
         print('fetch...')
         return instance._name
