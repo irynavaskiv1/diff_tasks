@@ -1,35 +1,42 @@
-class Property:
+class AGE:
 
-    def __init__(self, fget=None, fdel=None, fset=None, doc=None):
-        self.fget = fget
-        self.fdel = fdel
-        self.fset = fset
-        self.__doc__ = doc
+    def __init__(self):
+        self.fget = 'fget'
+        self.fset = 'fset'
+        self.fdel = 'fdel'
 
-    def __get__(self, instance, instancetype=None):
+    def __get__(self, instance, owner):
+        print('__get__')
         if instance is None:
-            return self
-        if self.fget is None:
-            raise AttributeError('can not get attribute')
-        return self.fget(instance)
+            return self.fget
+        else:
+            return instance._age
 
     def __set__(self, instance, value):
-        if self.fset is None:
-            raise AttributeError('can not set attribute')
-        return self.fset(instance)
+        print('__set__')
+        instance._age = value
 
-    def __del__(self, instance):
-        if self.fdel is None:
-            raise AttributeError('can not del attribute')
-        return self.fdel(instance)
+    def __delete__(self, instance):
+        print('__del__')
+        if instance is None:
+            raise AttributeError('Can not del attribute')
+        else:
+            del instance._age
 
 
 class Vaskiv:
 
-    def getName(self):
-        pass
+    def __init__(self, age):
+        self._age = age
+    age = AGE()
 
-    def setName(self, value):
-        pass
 
-    name = Property(getName(), setName())
+# get
+v = Vaskiv('Iren Va')
+print(v.age)
+
+# set
+v.age = 25
+
+# delete
+del v.age
