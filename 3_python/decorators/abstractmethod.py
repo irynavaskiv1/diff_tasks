@@ -17,7 +17,7 @@ class Sub(Super):
     def action(self):
         print('spam')
 
-# now we can create instans, we have logic in abstract method
+# now we can create instance, we have logic in abstract method
 
 
 s = Sub()
