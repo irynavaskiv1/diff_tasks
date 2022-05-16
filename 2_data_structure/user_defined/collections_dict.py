@@ -1,6 +1,4 @@
-from collections import defaultdict
-from collections import OrderedDict
-
+from collections import OrderedDict, defaultdict
 
 d = defaultdict(int)
 my_list = [1, 2, 3, 4, 2, 4, 1, 2]
