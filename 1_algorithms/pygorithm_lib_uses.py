@@ -1,9 +1,6 @@
 from pygorithm.data_structures import stack
-from pygorithm.sorting import bubble_sort
-from pygorithm.sorting import quick_sort
-from pygorithm.sorting import merge_sort
-from pygorithm.sorting import selection_sort
-
+from pygorithm.sorting import (bubble_sort, merge_sort, quick_sort,
+                               selection_sort)
 
 # help(data_structures)
 # ----------------------------------------------------------------------------------------------------------------------
