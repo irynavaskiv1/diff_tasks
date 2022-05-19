@@ -1,8 +1,8 @@
 import json
-import unittest
-import requests
 import multiprocessing
+import unittest
 
+import requests
 from main import run
 
 DOMAIN = "localhost"

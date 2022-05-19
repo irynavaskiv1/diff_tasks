@@ -1,5 +1,5 @@
-import time
 import multiprocessing
+import time
 
 args = [1, 2, 3, 4]
 var = 1, 2, 3, 4
