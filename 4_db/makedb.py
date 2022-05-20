@@ -1,6 +1,6 @@
-from python.OOP.person import Person, Manager
 import shelve
 
+from python.OOP.person import Manager, Person
 
 bob = Person('Bob Smith', 'QA', 20000)
 sue = Person('Sue Jones', 'AQA', 25000)
