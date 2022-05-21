@@ -1,6 +1,7 @@
 import shelve
-from person import Person
+
 from manager import Manager
+from person import Person
 
 bob = Person(name='Bob', age=30, pay=3000, job='Dev')
 sue = Person(name='Sue', age=20, pay=5000, job='QA')

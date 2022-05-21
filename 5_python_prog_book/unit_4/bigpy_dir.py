@@ -1,5 +1,5 @@
-import os
 import glob
+import os
 import sys
 
 dir_name = r'/Users/admin/Documents/diff_tasks/5_python_prog_book/unit_3' if len(sys.argv) == 1 else sys.argv[1]
