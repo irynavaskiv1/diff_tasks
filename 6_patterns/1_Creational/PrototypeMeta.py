@@ -1,7 +1,5 @@
-from abc import ABCMeta
-from abc import abstractmethod
-
 import copy
+from abc import ABCMeta, abstractmethod
 
 
 class Meta_Class(metaclass=ABCMeta):
