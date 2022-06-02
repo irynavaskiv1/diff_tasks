@@ -9,12 +9,11 @@ class Price:
             discount = self.discount_strategy(self)
         else:
             discount = 0
-
         return self.price - discount
 
     def __repr__(self):
-        statement = "Price: {}, price after discount: {}"
-        return statement.format(self.price, self.price_after_discount())
+        result = f'Price: {self.price}, price after discount: {self.price_after_discount()}!'
+        return result
 
 
 def on_sale_discount(order):
