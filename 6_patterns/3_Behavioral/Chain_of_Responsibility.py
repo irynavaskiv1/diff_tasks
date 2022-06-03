@@ -60,9 +60,9 @@ def client_code(handler: Handler) -> None:
         print(f"\nClient: Is {name} present today?")
         result = handler.handle(name)
         if result:
-            print(f"{result}", end="")
+            print(f"{result}", end=" ")
         else:
-            print(f"{name} is not present.", end="")
+            print(f"{name} is not present.", end=" ")
 
 
 if __name__ == "__main__":
