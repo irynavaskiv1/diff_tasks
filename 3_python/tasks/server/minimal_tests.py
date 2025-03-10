@@ -14,7 +14,7 @@ process = multiprocessing.Process(target=run, kwargs={"host": DOMAIN, "port": PO
 
 
 def setUpModule():
-    print('start process---')
+    print("start process---")
     process.start()
 
 
@@ -36,7 +36,7 @@ class UserTestGET(unittest.TestCase):
                 "firstName": "John",
                 "lastName": "James",
                 "email": "john@email.com",
-                "password": "12345"
+                "password": "12345",
             }
         ]
 
@@ -53,7 +53,7 @@ class UserTestGET(unittest.TestCase):
             "firstName": "John",
             "lastName": "James",
             "email": "john@email.com",
-            "password": "12345"
+            "password": "12345",
         }
 
         self.assertEqual(expected_status_code, response.status_code)
@@ -63,9 +63,7 @@ class UserTestGET(unittest.TestCase):
         username = "User_not_found"
         response = requests.get(f"{HOST}/user/{username}")
         expected_status_code = 400
-        expected_data = {
-            "error": "User not found"
-        }
+        expected_data = {"error": "User not found"}
 
         self.assertEqual(expected_status_code, response.status_code)
         self.assertDictEqual(expected_data, response.json())
@@ -82,7 +80,7 @@ class UserTestPOST(unittest.TestCase):
             "firstName": "John",
             "lastName": "James",
             "email": "john@email.com",
-            "password": "12345"
+            "password": "12345",
         }
         response = requests.post(f"{HOST}/user", data=json.dumps(data))
 
@@ -99,7 +97,7 @@ class UserTestPOST(unittest.TestCase):
             "firstName": "John",
             "lastName": "James",
             "email": "john@email.com",
-            "password": "12345"
+            "password": "12345",
         }
         response = requests.post(f"{HOST}/user", data=json.dumps(data))
 
@@ -109,11 +107,7 @@ class UserTestPOST(unittest.TestCase):
         self.assertDictEqual(expected_data, response.json())
 
     def test_create_user_not_valid_data(self):
-        data = {
-            "lastName": "James",
-            "email": "john@email.com",
-            "password": "12345"
-        }
+        data = {"lastName": "James", "email": "john@email.com", "password": "12345"}
         response = requests.post(f"{HOST}/user", data=json.dumps(data))
 
         expected_status_code = 400
@@ -129,7 +123,7 @@ class UserTestPOST(unittest.TestCase):
                 "firstName": "John",
                 "lastName": "James",
                 "email": "john@email.com",
-                "password": "12345"
+                "password": "12345",
             },
             {
                 "id": 3,
@@ -137,9 +131,8 @@ class UserTestPOST(unittest.TestCase):
                 "firstName": "John",
                 "lastName": "James",
                 "email": "john2@email.com",
-                "password": "12345"
-            }
-
+                "password": "12345",
+            },
         ]
         response = requests.post(f"{HOST}/user/createWithList", data=json.dumps(data))
 
@@ -157,7 +150,7 @@ class UserTestPOST(unittest.TestCase):
                 "firstName": "John",
                 "lastName": "James",
                 "email": "john@email.com",
-                "password": "12345"
+                "password": "12345",
             },
             {
                 "id": 2,
@@ -165,9 +158,8 @@ class UserTestPOST(unittest.TestCase):
                 "firstName": "John",
                 "lastName": "James",
                 "email": "john2@email.com",
-                "password": "12345"
-            }
-
+                "password": "12345",
+            },
         ]
         response = requests.post(f"{HOST}/user/createWithList", data=json.dumps(data))
 
@@ -185,21 +177,20 @@ class UserTestPOST(unittest.TestCase):
                 "firstName": "John",
                 "lastName": "James",
                 "email": "john@email.com",
-                "password": "12345"
+                "password": "12345",
             },
             {
                 "id": 2,
                 "username": "theUser2",
                 "firstName": "John2",
-                "lastName": "James2"
+                "lastName": "James2",
             },
             {
                 "id": 3,
                 "username": "theUser3",
                 "firstName": "John3",
-                "lastName": "James3"
-            }
-
+                "lastName": "James3",
+            },
         ]
         response = requests.post(f"{HOST}/user/createWithList", data=json.dumps(data))
 
@@ -219,7 +210,7 @@ class UserTestPUT(unittest.TestCase):
             "firstName": "newJohn",
             "lastName": "newJames",
             "email": "john@email.com",
-            "password": "new12345"
+            "password": "new12345",
         }
         response = requests.put(f"{HOST}/user/theUser", data=json.dumps(data))
         expected_status_code = 200
@@ -233,13 +224,11 @@ class UserTestPUT(unittest.TestCase):
             "firstName": "newJohn",
             "lastName": "newJames",
             "email": "john@email.com",
-            "password": "new12345"
+            "password": "new12345",
         }
         response = requests.put(f"{HOST}/user/theUser", data=json.dumps(data))
         expected_status_code = 400
-        expected_data = {
-            "error": "not valid request data"
-        }
+        expected_data = {"error": "not valid request data"}
 
         self.assertEqual(expected_status_code, response.status_code)
         self.assertDictEqual(expected_data, response.json())
@@ -249,13 +238,11 @@ class UserTestPUT(unittest.TestCase):
             "firstName": "newJohn",
             "lastName": "newJames",
             "email": "john@email.com",
-            "password": "new12345"
+            "password": "new12345",
         }
         response = requests.put(f"{HOST}/user/user_not_found", data=json.dumps(data))
         expected_status_code = 404
-        expected_data = {
-            "error": "User not found"
-        }
+        expected_data = {"error": "User not found"}
 
         self.assertEqual(expected_status_code, response.status_code)
         self.assertDictEqual(expected_data, response.json())
@@ -278,13 +265,11 @@ class UserTestDELETE(unittest.TestCase):
         id = 22
         response = requests.delete(f"{HOST}/user/{id}")
         expected_status_code = 404
-        expected_data = {
-            "error": "User not found"
-        }
+        expected_data = {"error": "User not found"}
 
         self.assertEqual(expected_status_code, response.status_code)
         self.assertDictEqual(expected_data, response.json())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
