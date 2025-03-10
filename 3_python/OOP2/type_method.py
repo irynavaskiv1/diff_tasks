@@ -1,4 +1,5 @@
 # create class without class statement
+import pip
 
 # 1. Example:
 type('Ira', (), {'__init__': lambda self: self})

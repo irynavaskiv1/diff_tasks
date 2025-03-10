@@ -1,4 +1,4 @@
-print('I am '), __name__
+print("I am "), __name__
 
 
 def minmax(test, *args):
@@ -9,10 +9,14 @@ def minmax(test, *args):
     return res
 
 
-def lessthan(x, y): return x < y
-def grtrthan(x, y): return x > y
+def lessthan(x, y):
+    return x < y
 
 
-if __name__ == '__main__':
+def grtrthan(x, y):
+    return x > y
+
+
+if __name__ == "__main__":
     print(minmax(lessthan, 4, 5))
     print(minmax(grtrthan, 3, 4))

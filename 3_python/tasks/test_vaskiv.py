@@ -1,20 +1,20 @@
 def task1():
-    """Виведіть на екран всі непарні значення, а також їхню суму з числової послідовності від 0 до 1000 """
+    """Виведіть на екран всі непарні значення, а також їхню суму з числової послідовності від 0 до 1000"""
     odd_values = []
     odd_values_sum = None
     try:
         range_list = list(range(0, 1000))
         odd_values = [i for i in range_list if i % 2 == 0]
         odd_values_sum = sum(odd_values)
-        print(f'Odd values is {odd_values} !')
-        print(f'Odd values sum is {odd_values_sum} !')
+        print(f"Odd values is {odd_values} !")
+        print(f"Odd values sum is {odd_values_sum} !")
     except Exception as e:
-        print('Exception in task1', e)
+        print("Exception in task1", e)
 
     return odd_values, odd_values_sum
 
 
-print('\n')
+print("\n")
 task1()
 
 
@@ -25,7 +25,7 @@ def task2(start, pow2, number):
         print(curr_term, end=" ")
 
 
-print('\n')
+print("\n")
 task2(2, 2, 20)
 
 
@@ -39,17 +39,29 @@ def task3(number):
     """
     if type(number) == int and number <= 12:
         try:
-            weather = {1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August",
-                       9: "September", 10: "October", 11: "November", 12: "December"}
+            weather = {
+                1: "January",
+                2: "February",
+                3: "March",
+                4: "April",
+                5: "May",
+                6: "June",
+                7: "July",
+                8: "August",
+                9: "September",
+                10: "October",
+                11: "November",
+                12: "December",
+            }
             result = weather[number]
             print(result)
         except Exception as e:
             print("Error in task3, ", e)
     else:
-        print(f'{number} is not number or is not numeric value!')
+        print(f"{number} is not number or is not numeric value!")
 
 
-print('\n')
-task3('111')
+print("\n")
+task3("111")
 task3(111)
 task3(1)
