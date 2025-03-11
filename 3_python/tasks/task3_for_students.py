@@ -17,8 +17,8 @@ lst = [12, 3]
 del lst[:]
 
 # 3 Merge two dics
-one = {"1": 'one', "3": 'three'}
-two = {"2": 'two', "4": 'four'}
+one = {"1": "one", "3": "three"}
+two = {"2": "two", "4": "four"}
 three = dict(one, **two)
 print(three)
 #  {'1': 'one', '3': 'three', '2': 'two', '4': 'four'}

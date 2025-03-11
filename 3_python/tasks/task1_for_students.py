@@ -37,8 +37,8 @@ def is_anagrams(str1, str2):
     return set(str1) == set(str2)
 
 
-print(is_anagrams('кіт', 'тік'))
-print(is_anagrams('кіт', 'так'))
+print(is_anagrams("кіт", "тік"))
+print(is_anagrams("кіт", "так"))
 
 
 # 5. Find max and min value in unsorted list
@@ -49,12 +49,12 @@ print(min(l3))
 
 # 6. Reverse string using recursion
 def reverse(test_str):
-    if len(test_str) <=1:
+    if len(test_str) <= 1:
         return test_str
     return reverse(test_str[1:]) + test_str[0]
 
 
-print(reverse('iravaskiv'))
+print(reverse("iravaskiv"))
 
 
 # 7. Compute the first 10 fibonacci numbers
@@ -62,7 +62,7 @@ a, b = 0, 1
 n = 10
 for i in range(n):
     print(b)
-    a, b = b, a+b
+    a, b = b, a + b
 
 
 # 8. Check if string is palindrome
@@ -70,8 +70,8 @@ def is_palindrome(phrase):
     return phrase == phrase[::-1]
 
 
-print(is_palindrome('anna'))
-print(is_palindrome('ira'))
+print(is_palindrome("anna"))
+print(is_palindrome("ira"))
 
 # 9. Use list as stack, array, queue
 l4 = [1, 2, 3, 4]
@@ -87,4 +87,4 @@ l4.pop()
 
 # 10. Code for get current time
 currecttime = time.localtime()
-print('Current time is: ', currecttime)
+print("Current time is: ", currecttime)

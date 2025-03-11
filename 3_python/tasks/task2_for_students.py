@@ -3,7 +3,7 @@ def fibo(x):
         return 0
     elif x == 2:
         return 2
-    return fibo(x-1) + fibo(x-2)
+    return fibo(x - 1) + fibo(x - 2)
 
 
 def palindrom(x):
