@@ -5,3 +5,4 @@ pygorithm
 flake8
 isort
 requests
+ruff
