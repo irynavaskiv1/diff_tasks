@@ -2,7 +2,8 @@ from collections import deque
 
 
 def person_is_seller(name):
-    return name[0] == 'm'
+    return name[0] == "m"
+
 
 graph = {}
 graph["ira"] = ["1", "2", "3"]

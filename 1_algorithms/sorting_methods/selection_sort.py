@@ -10,7 +10,10 @@ def selection_algor(nums):
         for j in range(i + 1, len(nums)):  # перебірка несортованих елементів
             if nums[j] < nums[lowest_value_index]:
                 lowest_value_index = j
-        nums[i], nums[lowest_value_index] = nums[lowest_value_index], nums[i]  # найменший міняємо з першим елементом
+        nums[i], nums[lowest_value_index] = (
+            nums[lowest_value_index],
+            nums[i],
+        )  # найменший міняємо з першим елементом
 
 
 random_list_of_nums = [12, 8, 3, 20, 11]
@@ -18,7 +21,7 @@ selection_algor(random_list_of_nums)
 print(random_list_of_nums)
 
 
-#_______________________________________________________________________________________________________________________
+# _______________________________________________________________________________________________________________________
 def findSmallest(inputes_list):
     smallest = inputes_list[0]
     smallest_index = 0

@@ -8,7 +8,7 @@ def lenear_search(input_list, x):
     return -1
 
 
-test_list = ['v', 'a', 's', 'k', 'i', 'v']
-find_value = 'i'
+test_list = ["v", "a", "s", "k", "i", "v"]
+find_value = "i"
 
 print(lenear_search(test_list, find_value))
