@@ -1,11 +1,12 @@
 # very simple way
 graph = {}
-graph['me'] = ['ira', 'vaskiv']
+graph["me"] = ["ira", "vaskiv"]
 print(graph)
 
 
 class Graph:
-    ''' full way structure '''
+    """full way structure"""
+
     def __init__(self, graph_dict=None):
         if graph_dict is None:
             graph_dict = {}
@@ -38,7 +39,7 @@ class Graph:
         return edges
 
     def __str__(self):
-        res = 'vertices: '
+        res = "vertices: "
         for k in self.graph_dict:
             res += str(k) + "  "
         res += "\nedges"
@@ -63,15 +64,15 @@ class Graph:
 
 if __name__ == "__main__":
     g = {
-        'a': ['c', 'f', 'b'],
-        'b': ['a', 'c', 'd'],
-        'c': ['f', 'a', 'b'],
-        'd': ['b', 'c', 'e'],
-        'e': ['f', 'd'],
-        'f': ['e', 'c', 'a']
+        "a": ["c", "f", "b"],
+        "b": ["a", "c", "d"],
+        "c": ["f", "a", "b"],
+        "d": ["b", "c", "e"],
+        "e": ["f", "d"],
+        "f": ["e", "c", "a"],
     }
     my_graph = Graph(g)
     print(my_graph.edges())
     print(my_graph.vertices())
-    a = my_graph.get_path(start_vertex='a', end_vertex='e')
+    a = my_graph.get_path(start_vertex="a", end_vertex="e")
     print(a)

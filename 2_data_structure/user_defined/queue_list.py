@@ -1,9 +1,9 @@
 # Queue is a linear data structure that stores items in First In First Out (FIFO) manner.
 
 queue = []
-queue.append('a')
-queue.append('b')
-queue.append('c')
+queue.append("a")
+queue.append("b")
+queue.append("c")
 
 print("Initial queue")
 print(queue)

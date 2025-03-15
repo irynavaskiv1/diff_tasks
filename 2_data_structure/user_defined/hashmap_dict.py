@@ -12,12 +12,11 @@ def check_voter(name):
         print("let them vote!")
 
 
-check_voter('ira')
-check_voter('ira')
+check_voter("ira")
+check_voter("ira")
 
 
 class HashTable:
-
     def __init__(self, size):
         self.size = size
         self.hash_table = self.create_buckets()
@@ -76,16 +75,16 @@ class HashTable:
 
 hash_table = HashTable(50)
 
-hash_table.set_val('ira@example.com', 'some value')
+hash_table.set_val("ira@example.com", "some value")
 print(hash_table)
 print()
 
-hash_table.set_val('vaskiv@example.com', 'some other value')
+hash_table.set_val("vaskiv@example.com", "some other value")
 print(hash_table)
 print()
 
-print(hash_table.get_val('vaskiv@example.com'))
+print(hash_table.get_val("vaskiv@example.com"))
 print()
 
-hash_table.delete_val('vaskiv@example.com')
+hash_table.delete_val("vaskiv@example.com")
 print(hash_table)
