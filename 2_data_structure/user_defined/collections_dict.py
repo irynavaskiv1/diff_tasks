@@ -10,29 +10,28 @@ print(d)
 # ---------------------------------------------------------------------------------------------------------------------
 
 od = OrderedDict()
-od['a'] = 1
-od['b'] = 2
-od['c'] = 3
-od['d'] = 4
+od["a"] = 1
+od["b"] = 2
+od["c"] = 3
+od["d"] = 4
 
-print('Before Deleting')
+print("Before Deleting")
 for key, value in od.items():
     print(key, value)
 
 # deleting element
-od.pop('a')
-print('Before Deleting')
+od.pop("a")
+print("Before Deleting")
 for key, value in od.items():
     print(key, value)
 
 # Re-inserting the same
-od['a'] = 1
+od["a"] = 1
 
-print('\nAfter re-inserting')
+print("\nAfter re-inserting")
 for key, value in od.items():
     print(key, value)
 
-simple_dict = {'a': 11, "b": 23}
-simple_dict['d'] = 33
+simple_dict = {"a": 11, "b": 23}
+simple_dict["d"] = 33
 print(simple_dict)
-

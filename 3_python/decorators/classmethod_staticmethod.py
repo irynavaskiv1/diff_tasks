@@ -1,6 +1,6 @@
 class Grabber:
 
-    """ class for understand class and instance attribute. """
+    """Class for understand class and instance attribute."""
 
     USER = 'user_ira'
 

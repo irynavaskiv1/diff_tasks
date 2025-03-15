@@ -10,7 +10,7 @@ class Super(metaclass=ABCMeta):
         pass
 
 
-# in this step we can not create instans of class Super,  x = Super()
+# in this step we can not create instance of class Super,  x = Super()
 # because we not write logic of abstract class
 
 class Sub(Super):
