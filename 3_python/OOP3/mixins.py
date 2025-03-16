@@ -1,17 +1,18 @@
 class A:
-    title = 'A'
+    title = "A"
+
     def __init__(self):
-        print('class A')
+        print("class A")
 
 
 class B(A):
     def __init__(self):
-        print('class B')
+        print("class B")
 
 
 class C(A):
     def __init__(self):
-        print('class C')
+        print("class C")
 
 
 class B1(B):

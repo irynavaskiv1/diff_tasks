@@ -5,7 +5,6 @@ class MetaDog(type):
 
 
 class MetaPuppi(metaclass=MetaDog):
-
     def __init__(self, age, city, idea):
         self.age = age
         self.city = city
@@ -15,7 +14,7 @@ class MetaPuppi(metaclass=MetaDog):
         return self.idea
 
 
-baddi = MetaPuppi(age=2, city='Lviv', idea='gav-gav')
+baddi = MetaPuppi(age=2, city="Lviv", idea="gav-gav")
 print(type(baddi))  # Main Dog
 print(type(MetaPuppi))  # <class '__main__.MetaDog'>
 
@@ -23,9 +22,9 @@ print(type(MetaPuppi))  # <class '__main__.MetaDog'>
 print(dir(baddi))
 
 # get introspection getattr()
-print('The age is:', getattr(baddi, "age"))  # The age is: 2
-print('The age is:', baddi.age)  # The age is: 2
+print("The age is:", getattr(baddi, "age"))  # The age is: 2
+print("The age is:", baddi.age)  # The age is: 2
 
 # get introspection hasattr()
-print('The age is:', hasattr(baddi, "age"))  # The age is: True
-print('The age is:', hasattr(baddi, "test"))  # The age is: False
+print("The age is:", hasattr(baddi, "age"))  # The age is: True
+print("The age is:", hasattr(baddi, "test"))  # The age is: False

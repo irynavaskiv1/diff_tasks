@@ -2,12 +2,12 @@ X = 11  # global name inside module
 
 
 def f():
-    print('def f x=', X)
+    print("def f x=", X)
 
 
 def g():
     X = 22
-    print('def g x=', X)
+    print("def g x=", X)
 
 
 class C:
@@ -18,12 +18,12 @@ class C:
         self.X = 55
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(X)
     f()
     g()
     print(X)
 
     obj = C()
-    print('obj.X', obj.X)
-    print('obj.C.X', C.X)
+    print("obj.X", obj.X)
+    print("obj.C.X", C.X)

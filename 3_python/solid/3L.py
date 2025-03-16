@@ -5,7 +5,6 @@ Liskov Substitution Principle- Об'єкти в програмі можуть б
 
 
 class Vehicle:
-
     def __init__(self, name: str, speed: float):
         self.name = name
         self.speed = speed
@@ -18,13 +17,11 @@ class Vehicle:
 
 
 class VehicleWithoutEngine(Vehicle):
-
     def start_moving(self):
         raise NotImplemented
 
 
 class VehicleWithEngine(Vehicle):
-
     def engine(self):
         pass
 
@@ -33,12 +30,10 @@ class VehicleWithEngine(Vehicle):
 
 
 class Car(VehicleWithEngine):
-
     def start_engine(self):
         pass
 
 
 class Bicycle(VehicleWithoutEngine):
-
     def start_moving(self):
         pass

@@ -5,5 +5,5 @@ def gen(param, start=0):
         start += 1
 
 
-for elem in gen(param='abc', start=10):
+for elem in gen(param="abc", start=10):
     print(elem)

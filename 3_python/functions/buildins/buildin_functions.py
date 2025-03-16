@@ -1,8 +1,8 @@
-                                         # abs()
+# abs()
 # print('Absolute value of -100 is:', abs(-100))
 # print('Absolute value of -30.33 is:', abs(-30.33))
 
-                                         # any()
+# any()
 # True since 1,3 and 4 (at least one) is true
 l = [1, 3, 4, 0]
 # print(any(l))
@@ -19,7 +19,7 @@ l = [0, False, 5]
 l = []
 # print(any(l))
 
-                                         # all()
+# all()
 # all values true
 l = [1, 3, 4, 5]
 # print(all(l))
@@ -41,26 +41,26 @@ l = []
 # print(all(l))
 
 
-                                         # ascii()
-normalText = 'Python is interesting'
+# ascii()
+normalText = "Python is interesting"
 # print(ascii(normalText))
 
-otherText = 'Pythön is interesting'
+otherText = "Pythön is interesting"
 # print(ascii(otherText))
 
 # print('Pyth\xf6n is interesting')
 
-                                        # bin()
+# bin()
 number = 5
 # print('The binary equivalent of 5 is:', bin(number))
 
-                                         # bytearray()
+# bytearray()
 string = "Python is interesting."
 # string with encoding 'utf-8'
-arr = bytearray(string, 'utf-8')
+arr = bytearray(string, "utf-8")
 # print(arr)
 
-                                         # callable()
+# callable()
 x = 5
 # print(callable(x))
 
@@ -72,44 +72,44 @@ def testFunction():
 y = testFunction
 # print(callable(y))
 
-                                         # bytes()
+# bytes()
 string = "Python is interesting."
 # string with encoding 'utf-8'
-arr = bytes(string, 'utf-8')
+arr = bytes(string, "utf-8")
 # print("arr", arr)
 
-                                         # bytes()
+# bytes()
 # print(chr(97))
 # print(chr(65))
 # print(chr(1200))
 
-                                         # compile()
+# compile()
 codeInString = 'a = 5\nb=6\nsum=a+b\nprint("sum =",sum)'
-codeObejct = compile(codeInString, 'sumstring', 'exec')
+codeObejct = compile(codeInString, "sumstring", "exec")
 # exec(codeObejct)
 
-                                         # dict()
+# dict()
 # keyword argument is not passed
-numbers1 = dict([('x', 5), ('y', -5)])
+numbers1 = dict([("x", 5), ("y", -5)])
 # print('numbers1 =', numbers1)
 
 # keyword argument is also passed
-numbers2 = dict([('x', 5), ('y', -5)], z=8)
+numbers2 = dict([("x", 5), ("y", -5)], z=8)
 # print('numbers2 =', numbers2)
 
 # zip() creates an iterable in Python 3
-numbers3 = dict(dict(zip(['x', 'y', 'z'], [1, 2, 3])))
+numbers3 = dict(dict(zip(["x", "y", "z"], [1, 2, 3])))
 # print('numbers3 =', numbers3)
 
-                                         # dir()
+# dir()
 number = [1, 2, 3]
 # print(dir(number))
 
 # print('\nReturn Value from empty dir()')
 # print(dir())
 
-                                         # enumerate()
-grocery = ['bread', 'milk', 'butter']
+# enumerate()
+grocery = ["bread", "milk", "butter"]
 enumerateGrocery = enumerate(grocery)
 
 # print(type(enumerateGrocery))
@@ -121,29 +121,29 @@ enumerateGrocery = enumerate(grocery)
 enumerateGrocery = enumerate(grocery, 10)
 # print(list(enumerateGrocery))
 
-                                         # globals()
+# globals()
 age = 23
 # print('The age is:', age)
 
-globals()['age'] = 25
+globals()["age"] = 25
 # print('The age is:', age)
 
-                                         # sorted()
+# sorted()
 # vowels list
-py_list = ['e', 'a', 'u', 'o', 'i']
+py_list = ["e", "a", "u", "o", "i"]
 # print(sorted(py_list))
 
 # string
-py_string = 'Python'
+py_string = "Python"
 # print(sorted(py_string))
 
 # vowels tuple
-py_tuple = ('e', 'a', 'u', 'o', 'i')
+py_tuple = ("e", "a", "u", "o", "i")
 # print(sorted(py_tuple))
 
-                                         # memoryview()
+# memoryview()
 # random bytearray
-random_byte_array = bytearray('ABC', 'utf-8')
+random_byte_array = bytearray("ABC", "utf-8")
 
 mv = memoryview(random_byte_array)
 
@@ -156,9 +156,9 @@ mv = memoryview(random_byte_array)
 # create list from memory view
 # print(list(mv[0:3]))
 
-                                         # zip()
+# zip()
 number_list = [1, 2, 3]
-str_list = ['one', 'two', 'three']
+str_list = ["one", "two", "three"]
 
 # No iterables are passed
 result = zip()

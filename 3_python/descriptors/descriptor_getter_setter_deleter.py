@@ -1,5 +1,4 @@
 class DescSquare:
-
     def __init__(self, value):
         self.value = value
 
@@ -8,12 +7,12 @@ class DescSquare:
 
     def __set__(self, instance, value):
         if not isinstance(value, str) and len(value) < 3:
-            raise TypeError('Expected type str with len 3 symbols!')
+            raise TypeError("Expected type str with len 3 symbols!")
         self.value = value
 
     def __delete__(self, instance):
-        instance.__dict__[self.value] = ''
-        print('Delete ', self.value)
+        instance.__dict__[self.value] = ""
+        print("Delete ", self.value)
 
 
 class Client1:
@@ -32,12 +31,12 @@ print(c2.x)  # 10 * 2
 
 
 class NewClass:
-    value = DescSquare('val')
+    value = DescSquare("val")
 
     def __init__(self, value):
         self.value = value
 
 
-book = NewClass('bad')
+book = NewClass("bad")
 print(book.value)
 del book.value

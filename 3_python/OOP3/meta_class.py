@@ -12,7 +12,7 @@ class Dot2(Dot):
         self.new_var2 = new_var2
 
 
-dot = Dot('.')
+dot = Dot(".")
 print(type(dot))
 
 type(Dot)
@@ -29,4 +29,4 @@ print(cls_dict)
 exec(body, globals(), cls_dict)
 print(cls_dict)
 
-Dot2 = type('Dot2', (Dot,), cls_dict)
+Dot2 = type("Dot2", (Dot,), cls_dict)

@@ -14,5 +14,5 @@ class SykhivNew:
 
 
 # create instance
-s = SykhivNew(street_new='Santa', park_new='Forest')
+s = SykhivNew(street_new="Santa", park_new="Forest")
 print(s.park_new)

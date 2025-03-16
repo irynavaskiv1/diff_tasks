@@ -15,7 +15,7 @@ class GetAttr:
         self.attr2 = 2
 
     def __getattr__(self, attr):
-        print('__getattr__: ' + attr)
+        print("__getattr__: " + attr)
         return 3
 
 
@@ -26,8 +26,8 @@ class GetAttribute(object):
         self.attr2 = 2
 
     def __getattribute__(self, attr):
-        print('__getattribute__ :' + attr)
-        if attr == 'attr3':
+        print("__getattribute__ :" + attr)
+        if attr == "attr3":
             return 3
         else:
             return object.__getattribute__(self, attr)
@@ -36,11 +36,11 @@ class GetAttribute(object):
 X = GetAttr()
 Y = GetAttribute()
 
-print('attr class', X.attr1)
-print('attribute class', Y.attr1)
-print('-' * 40)
-print('attr instance', X.attr2)
-print('attribute instance', Y.attr2)
-print('-' * 40)
-print('attr dynamic', X.attr3)
-print('attribute dynamic', X.attr3)
+print("attr class", X.attr1)
+print("attribute class", Y.attr1)
+print("-" * 40)
+print("attr instance", X.attr2)
+print("attribute instance", Y.attr2)
+print("-" * 40)
+print("attr dynamic", X.attr3)
+print("attribute dynamic", X.attr3)

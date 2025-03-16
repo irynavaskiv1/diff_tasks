@@ -2,20 +2,20 @@ import unittest
 
 
 def dog_check(mystring):
-    if 'dog' in mystring:
+    if "dog" in mystring:
         return True
     else:
         return False
 
 
-dog_check('dog')
+dog_check("dog")
 
 
-class myfunction():
-
+class myfunction:
     def func(*args):
         for item in args:
             print(item)
+
     func(2, 4)
 
 
@@ -23,16 +23,16 @@ def myfunction2(**jelly):
     print(jelly)
 
 
-myfunction2(name='ira', surname='vaskiv')
+myfunction2(name="ira", surname="vaskiv")
 
 
 def myfunction3(*args, **kwargs):
     print(args)
     print(kwargs)
-    print('i like {} {}'.format(args[0], kwargs["name"]))
+    print("i like {} {}".format(args[0], kwargs["name"]))
 
 
-myfunction3(2, 4, name='ira', surname='vaskiv')
+myfunction3(2, 4, name="ira", surname="vaskiv")
 
 
 def animal_crackers(text):
@@ -51,10 +51,10 @@ print(makes_twenty(10.1, 30))
 
 
 def myfunction4(*args):
-    return [a for a in args if a*3 == 30]
+    return [a for a in args if a * 3 == 30]
 
 
-print(myfunction4(10, 2, 4, 10,  5))
+print(myfunction4(10, 2, 4, 10, 5))
 
 
 def myfunction5(*args):
@@ -78,13 +78,13 @@ def print_values(**kwargs):
 
 
 print_values(
-            name_1="Alex",
-            name_2="Gray",
-            name_3="Harper",
-            name_4="Phoenix",
-            name_5="Remy",
-            name_6="Val"
-        )
+    name_1="Alex",
+    name_2="Gray",
+    name_3="Harper",
+    name_4="Phoenix",
+    name_5="Remy",
+    name_6="Val",
+)
 
 
 def amount(*args):
@@ -100,7 +100,7 @@ def old_macdonald(name):
     return first_half.capitalize() + second_half.capitalize()
 
 
-print(old_macdonald('macdonald'))
+print(old_macdonald("macdonald"))
 
 
 def iravaskiv1(name):
@@ -118,7 +118,7 @@ def master_yoga(text):
     return reverse_wordlist
 
 
-print(master_yoga('We are ready'))
+print(master_yoga("We are ready"))
 
 
 def iravaskiv2(text):
@@ -127,11 +127,10 @@ def iravaskiv2(text):
     return change_wordlist
 
 
-print(iravaskiv2('I think positive all day'))
+print(iravaskiv2("I think positive all day"))
 
 
 def summer_69(arr):
-
     total = 0
     add = True
 
@@ -157,8 +156,7 @@ print(summer_69([1, 3, 5]))
 
 
 def spy_game(nums):
-
-    code = [0, 0, 7, 'x']
+    code = [0, 0, 7, "x"]
 
     for num in nums:
         if num == code[0]:
@@ -171,7 +169,6 @@ print(spy_game([1, 2, 4, 0, 0, 7, 5]))
 
 
 def count_primes(num):
-
     if num < 2:
         return 0
 
@@ -201,15 +198,15 @@ def splicer(mystring):
         return mystring[0]
 
 
-print(splicer(['Andy', 'Eve', 'Sally']))
+print(splicer(["Andy", "Eve", "Sally"]))
 
 
-names = ['Andy', 'Eve', 'Sally']
+names = ["Andy", "Eve", "Sally"]
 list(map(splicer, names))
 
 
 def square(num):
-    return num ** 2
+    return num**2
 
 
 print(square(3))
@@ -228,7 +225,7 @@ print(check_even(8))
 mynums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(list(filter(lambda num: num % 2 == 0, mynums)))
 
-names = ['Ira', 'Taras', 'Maria']
+names = ["Ira", "Taras", "Maria"]
 print(list(map(lambda x: x[::-1], names)))
 
 
@@ -248,32 +245,29 @@ print(multiply([9, -3, 4]))
 
 
 def display_board(board):
+    print(board[7] + "|" + board[8] + "|" + board[9])
+    print("------")
+    print(board[4] + "|" + board[5] + "|" + board[6])
+    print("------")
+    print(board[1] + "|" + board[2] + "|" + board[3])
 
-    print(board[7] + '|' + board[8] + '|' + board[9])
-    print('------')
-    print(board[4] + '|' + board[5] + '|' + board[6])
-    print('------')
-    print(board[1] + '|' + board[2] + '|' + board[3])
 
-
-test_board = ['#', 'X', 'O'', X', 'O', 'X', 'O', 'X', 'O', 'X']
+test_board = ["#", "X", "O, X", "O", "X", "O", "X", "O", "X"]
 display_board(test_board)
 
 
 class Dog:
-
     def __init__(self, dogbreed, dogname):
         self.breed = dogbreed
         self.name = dogname
 
 
 class Cat:
-
     def __init__(self, ownercat):
         self.owners = ownercat
 
 
-my_cat = Cat(ownercat='ira')
+my_cat = Cat(ownercat="ira")
 print(my_cat.owners)
 
 
@@ -292,23 +286,21 @@ print(my_circle.get_circle())
 
 
 # наслідування
-class Animal():
-
+class Animal:
     def __init__(self):
-        print('ANIMAL CREATED')
+        print("ANIMAL CREATED")
 
     def who_am_i(self):
         print("I am an animal")
 
     def eating(self):
-        print('I can eating')
+        print("I can eating")
 
 
 class Dog2(Animal):
-
     def __init__(self):
         Animal.__init__(self)
-        print('Dog created')
+        print("Dog created")
 
     def who_am_i(self):
         print("I am Dog")
@@ -319,8 +311,7 @@ mydog.who_am_i()
 
 
 # поліморфізм
-class Dog3():
-
+class Dog3:
     def __init__(self, name):
         self.name = name
 
@@ -328,8 +319,7 @@ class Dog3():
         return self.name + " says woof!"
 
 
-class Cat():
-
+class Cat:
     def __init__(self, name):
         self.name = name
 
@@ -358,19 +348,17 @@ pet_speak(niko)
 
 # special methods
 class Book:
-
     def __init__(self, title, author, pages):
         self.title = title
         self.author = author
         self.pages = pages
 
 
-b = Book('Python roks', 'Jose', 200)
+b = Book("Python roks", "Jose", 200)
 print(b)
 
 
 class Line:
-
     def __init__(self, coor1, coor2):
         self.coor1 = coor1
         self.coor2 = coor2
@@ -378,17 +366,17 @@ class Line:
     def distance(self):
         x1, x2 = self.coor1
         y1, y2 = self.coor2
-        return ((x2-x1)**2 + (y2-y1)**2)**0.5
+        return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
 
     def slope(self):
         x1, x2 = self.coor1
         y1, y2 = self.coor2
-        return ((y2-y1)/(x2 - x1))
+        return (y2 - y1) / (x2 - x1)
 
     def somethink(self):
         x1, x2 = self.coor1
         y1, y2 = self.coor2
-        return (x1+x2+y1+y2)
+        return x1 + x2 + y1 + y2
 
 
 coordinate1 = (3, 1)
@@ -402,13 +390,12 @@ print(li.somethink())
 
 
 class Sample:
-
     def __init__(self, value):
         self.value = value
 
     def add_to_value(self, amount):
         self.value = self.value + amount
-        print('We just add {}'.format(amount))
+        print("We just add {}".format(amount))
 
 
 myobj = Sample(300)
@@ -417,7 +404,7 @@ print(myobj.add_to_value(400))
 
 
 def add(n1, n2):
-    print(n1+n2)
+    print(n1 + n2)
 
 
 add(10, 20)
@@ -425,28 +412,28 @@ add(10, 20)
 
 class exception1:
     try:
-        f = open('testfile', 'r')
+        f = open("testfile", "r")
         f.read()
     except Exception:
-        print('This is a exeption')
+        print("This is a exeption")
 
     finally:
-        print('i write without exeptions')
+        print("i write without exeptions")
 
 
 def ask_for_int():
     while True:
         try:
-            input('Please provide name: ')
+            input("Please provide name: ")
         except Exception:
-            print('Whoops! That is not a mane')
+            print("Whoops! That is not a mane")
             continue
         else:
-            print('Yes, thank you')
+            print("Yes, thank you")
             break
         finally:
             # print('End or blocks')
-            print('Great work Iryna')
+            print("Great work Iryna")
 
 
 ask_for_int()
@@ -454,7 +441,7 @@ ask_for_int()
 try:
     x = 5
     y = 1
-    z = x/y
+    z = x / y
 except Exception:
     print("Error")
 finally:
@@ -462,19 +449,18 @@ finally:
 
 
 class TestCap(unittest.TestCase):
-
     def test_one_world(self):
-        text = '3_python'
+        text = "3_python"
         result = cap.cap_text(text)
-        self.assertEquals(result, 'Python')
+        self.assertEquals(result, "Python")
 
     def test_multiple_words(self):
-        text = 'monty 3_python'
+        text = "monty 3_python"
         result = cap.cap_text(text)
-        self.assertEquals(result, 'Monty Python')
+        self.assertEquals(result, "Monty Python")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
 
 
@@ -486,7 +472,7 @@ print(func())
 
 
 def hello():
-    return('Hello')
+    return "Hello"
 
 
 print(hello())
@@ -496,15 +482,16 @@ print(greet)
 
 
 def hello(name="Jose"):
-    print('The hello() function has been executed!')
+    print("The hello() function has been executed!")
 
     def greet():
-        return '\t This is the greet() func inside hello!'
+        return "\t This is the greet() func inside hello!"
 
     print(greet())
 
     def ira():
-        int(input('Hello enter name'))
+        int(input("Hello enter name"))
+
     print(ira())
 
 

@@ -17,7 +17,7 @@ class Penguin(Bird):
 
 
 obj_parr = Parrot()
-print('obj_parr.flight()', obj_parr.flight())
+print("obj_parr.flight()", obj_parr.flight())
 
 obj_peng = Penguin()
-print('obj_peng.flight()', obj_peng.flight())
+print("obj_peng.flight()", obj_peng.flight())

@@ -5,7 +5,7 @@ class tracer:
 
     def __call__(self, *args):
         self.calls += 1
-        print(f'call {self.calls} to {self.func.__name__}')
+        print(f"call {self.calls} to {self.func.__name__}")
         self.func(*args)
 
 

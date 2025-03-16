@@ -1,5 +1,4 @@
 class Robot:
-
     def __init__(self, name, build_year, lk=0.5, lp=0.5):
         self.name = name
         self.build_year = build_year

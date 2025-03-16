@@ -1,6 +1,6 @@
 from person import Person
 
-bob = Person('Bob Smith')
+bob = Person("Bob Smith")
 print(bob)
 # Person: Bob Smith, 0]
 
@@ -12,4 +12,4 @@ print(list(bob.__dict__.keys()))
 # атрибути - це ключі до словника
 
 for key in bob.__dict__:
-    print(key, '=>', getattr(bob, key))
+    print(key, "=>", getattr(bob, key))

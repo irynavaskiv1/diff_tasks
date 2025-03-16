@@ -11,9 +11,9 @@ class NextClass:
 
 # виклик через інстанс
 x = NextClass()
-x.printer('ira vaskiv')
+x.printer("ira vaskiv")
 
 # прямий виклик але треба передати інстанс!!
-NextClass.printer(x, 'IRA VASKIV')
+NextClass.printer(x, "IRA VASKIV")
 
-NextClass.printer('IRA VASKIV')
+NextClass.printer("IRA VASKIV")

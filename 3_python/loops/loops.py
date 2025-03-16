@@ -2,7 +2,7 @@ class loops:
     mystring = "Iryna Vaskiv"
 
     for letter in mystring:
-        if letter != 'a':
+        if letter != "a":
             continue
         print(letter)
 
@@ -17,7 +17,7 @@ class loopsnumber:
 
 
 class loop1:
-    word = 'abcd'
+    word = "abcd"
 
     for index, letter in enumerate(word):
         print(index, letter)
@@ -25,15 +25,15 @@ class loop1:
 
 index_count = 0
 
-for letter in 'abcde':
-    print('At index {} the letter is {}'.format(index_count, letter))
+for letter in "abcde":
+    print("At index {} the letter is {}".format(index_count, letter))
 
 list1 = [1, 3, 4, 5, 6]
-list2 = ['a', 'd', 'f', 'g', 'k']
-list3 = ['df', 'fd', 'ff', 'dd', 'f']
+list2 = ["a", "d", "f", "g", "k"]
+list3 = ["df", "fd", "ff", "dd", "f"]
 
 
-mystring = 'Hello'
+mystring = "Hello"
 mylist = []
 
 for letter in mystring:
@@ -46,5 +46,5 @@ print(mylist)
 mylist = []
 for x in [2, 3, 4, 5]:
     for y in [0, 8, 1, 6]:
-        mylist.append(x*y)
+        mylist.append(x * y)
 print(mylist)

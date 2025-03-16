@@ -6,7 +6,7 @@ def stuff(file=None):
     raise MyError()
 
 
-my_file = open('data.txt', 'w')
+my_file = open("data.txt", "w")
 try:
     stuff(file=my_file)
 finally:

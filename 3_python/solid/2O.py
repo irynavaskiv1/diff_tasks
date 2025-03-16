@@ -5,27 +5,25 @@ Open/closed principle - Програмні сутності повинні бу�
 
 
 class TelephoneOld:
-
     def __init__(self, model: str):
         self.model = model
 
     def get_model(self) -> str:
-        return self.model + 'SomeModel'
+        return self.model + "SomeModel"
 
 
-telephone_models = [TelephoneOld('iphone'), TelephoneOld('android')]
+telephone_models = [TelephoneOld("iphone"), TelephoneOld("android")]
 
 
 def get_model_name(telephone_models: list):  # use type annotation
-
     model = []
     for models in telephone_models:
-        if models.model == 'iphone':
-            model.append('iphone6')
-        elif models.model == 'android':
-            model.append('android10')
+        if models.model == "iphone":
+            model.append("iphone6")
+        elif models.model == "android":
+            model.append("android10")
         else:
-            model = 'None'
+            model = "None"
 
     return model
 
@@ -33,33 +31,32 @@ def get_model_name(telephone_models: list):  # use type annotation
 print(get_model_name(telephone_models))
 
 
-#_______________________________________________________________________________________________________________________
+# _______________________________________________________________________________________________________________________
 # Add open to add new logic
 
 
 class Telephone:
-
     def __init__(self, model: str):
         self.model = model
 
     def get_model(self) -> str:
-        return self.model + 'SomeModel'
+        return self.model + "SomeModel"
 
     def make_processor(self):
         pass
 
 
-telephone_models2 = [Telephone('iphone'), Telephone('android'), Telephone('pixel')]
+telephone_models2 = [Telephone("iphone"), Telephone("android"), Telephone("pixel")]
 
 
 class Telephone1(Telephone):
     def make_processor(self):
-        print('processor2')
+        print("processor2")
 
 
 class Telephone2(Telephone):
     def make_processor(self):
-        print('processor4')
+        print("processor4")
 
 
 def get_processor(telephone_models2: list):

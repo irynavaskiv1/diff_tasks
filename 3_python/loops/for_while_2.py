@@ -3,7 +3,7 @@
 # мінімальне число.
 
 
-your_list = input('Ввведіть список: ')
+your_list = input("Ввведіть список: ")
 print(max(your_list))
 print(min(your_list))
 
@@ -16,30 +16,30 @@ print(min(your_list))
 my_list = range(1, 11)
 for i in my_list:
     if i % 2 == 0:
-        print('в листі є парні значення')
+        print("в листі є парні значення")
 else:
-    print('кінець')
+    print("кінець")
 
 
 my_list = range(1, 11)
 for i in my_list:
     if i % 3 == 0:
-        print(' в листі є непарні значення')
+        print(" в листі є непарні значення")
 else:
-    print('кінець')
+    print("кінець")
 
 
 my_list = range(1, 11)
 for i in my_list:
     if i % 3 != 0 and i % 2 != 0:
-        print(' є значення, які не діляться на 2  і на 3')
+        print(" є значення, які не діляться на 2  і на 3")
 else:
-    print('кінець')
+    print("кінець")
 
 # 3.  Написати програму, яка обчислює факторіал числа,
 # яке користувач вводить.(не використовувати рекурсивного виклику функції)
 
-user_number = int(input('Enter your number: '))
+user_number = int(input("Enter your number: "))
 
 factorial = 1
 while user_number > 1:
@@ -54,19 +54,19 @@ print(factorial)
 # Якщо ні, то виведіть повідомлення про помилку.
 # (використайте цикл while)
 
-login_user = input('Enter your login: ')
-login = 'ira'
+login_user = input("Enter your login: ")
+login = "ira"
 while login_user == login:
-    print('Login is True, congrats!')
+    print("Login is True, congrats!")
     break
 else:
-    print('Login is False, please try again, please!')
+    print("Login is False, please try again, please!")
 
 
 # task 4.2
 # comprehension
 
-user_factorial = int(input('Enter your number: '))
+user_factorial = int(input("Enter your number: "))
 factorial = 1
 
 while user_factorial > 1:

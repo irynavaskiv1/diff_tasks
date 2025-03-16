@@ -15,10 +15,10 @@ class Vaskiv:
         del self._name
 
 
-ira = Vaskiv('Ira')
+ira = Vaskiv("Ira")
 print(ira.name)
 
-ira.name = 'Ira Vaskiv'
+ira.name = "Ira Vaskiv"
 print(ira.name)  # without ira.name() use ira.name like property
 
 del ira.name

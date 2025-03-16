@@ -1,7 +1,7 @@
 def print_name(prefix):
     print("Searching prefix:{}".format(prefix))
     while True:
-        name = (yield)
+        name = yield
         if prefix in name:
             print(name)
 

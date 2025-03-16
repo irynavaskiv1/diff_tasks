@@ -2,8 +2,7 @@ from abc import ABC, abstractmethod
 
 
 class Connection(ABC):
-
-    IP = '0.0.0.0'
+    IP = "0.0.0.0"
 
     @property
     @abstractmethod
@@ -25,7 +24,6 @@ class Connection(ABC):
 
 
 class SSH(Connection):
-
     def connect(self):
         pass
 

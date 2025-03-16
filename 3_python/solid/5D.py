@@ -6,6 +6,7 @@
 
 class NewsPerson:
     """This is a high-level module"""
+
     @staticmethod
     def publish(news: str) -> None:
         """
@@ -17,6 +18,7 @@ class NewsPerson:
 
 class NewsPaper:
     """This is a low-level module"""
+
     @staticmethod
     def publish(news: str) -> None:
         """

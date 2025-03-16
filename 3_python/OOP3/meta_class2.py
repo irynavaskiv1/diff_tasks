@@ -2,12 +2,11 @@ import pprint
 
 
 class MyMeta(type):
-
     class_var = 20
 
     def __new__(cls, class_name, bases, class_dict):
         if len(bases) > 1:
-            raise TypeError(f'Can not  {class_name}')
+            raise TypeError(f"Can not  {class_name}")
         cls_obj = super().__new__(cls, class_name, bases, class_dict)
         return cls_obj
 
@@ -15,15 +14,15 @@ class MyMeta(type):
         super.__call__(*args, **kwargs)
 
     def run(self):
-        print(f'С: Run {self}', self.obj_var)
+        print(f"С: Run {self}", self.obj_var)
 
     @property
     def attr(self):
-        return 'Class attribute'
+        return "Class attribute"
 
     @classmethod
     def cls_method(cls):
-        return 'Class method'
+        return "Class method"
 
 
 class MyClass(metaclass=MyMeta):
@@ -36,7 +35,7 @@ class MyClass(metaclass=MyMeta):
         self.param = param
 
     def run(self):
-        print(f'O: Run {self}')
+        print(f"O: Run {self}")
 
 
 inst = MyClass(1001)

@@ -10,8 +10,8 @@ class Squares:
         if self.value == self.stop:
             raise StopIteration
         self.value += 1
-        return self.value ** 2
+        return self.value**2
 
 
 for i in Squares(1, 5):
-    print(i, end=' ')
+    print(i, end=" ")

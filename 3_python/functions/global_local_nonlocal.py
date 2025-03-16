@@ -6,8 +6,8 @@ def function_global():
     print("x inside:", x)
 
 
-#function_global()
-#print("x outside:", x)
+# function_global()
+# print("x outside:", x)
 
 # LOCAL
 
@@ -17,7 +17,7 @@ def foo():
     print(y)
 
 
-#foo()
+# foo()
 
 
 # LOCAL GLOBAL
@@ -32,7 +32,7 @@ def foo():
     print(y)
 
 
-#foo()
+# foo()
 
 # LOCAL GLOBAL
 x = 5
@@ -43,10 +43,11 @@ def foo():
     print("local x:", x)
 
 
-#foo()
-#print("global x:", x)
+# foo()
+# print("global x:", x)
 
 # NONLOCAL GLOBAL
+
 
 def outer():
     x = "local"

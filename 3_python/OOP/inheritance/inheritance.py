@@ -12,7 +12,6 @@ class ParentClass:
 
 
 class SubClass(ParentClass):
-
     def __init__(self):
         self.title = "IRASUB"
 
@@ -24,7 +23,6 @@ class SubClass(ParentClass):
 
 
 class SubClass2(SubClass):
-
     def __init__(self):
         self.title = "IRASUB2"
 

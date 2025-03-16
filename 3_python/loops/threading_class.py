@@ -3,7 +3,6 @@ import time
 
 
 class CountdownThread(threading.Thread):
-
     def __init__(self, count, name, t_to_sync=None, daemon=False):
         threading.Thread.__init__(self, name=name, daemon=daemon)
         self.count = count
@@ -22,7 +21,7 @@ class CountdownThread(threading.Thread):
                     print(self.t.is_not_alive(), self.t.name)
                     self.t.setDaemon(True)
                     break
-                print('CountdownThread ', self.count)
+                print("CountdownThread ", self.count)
                 self.count -= 1
                 time.sleep(0.2)
             self.result = True
@@ -32,8 +31,8 @@ class CountdownThread(threading.Thread):
             print(self.trace)
 
 
-t1 = CountdownThread(10, 'Ira')
-t2 = CountdownThread(20, 'Ira2', t1, daemon=True)
+t1 = CountdownThread(10, "Ira")
+t2 = CountdownThread(20, "Ira2", t1, daemon=True)
 t1.setDaemon(True)
 
 res1 = t1.start()

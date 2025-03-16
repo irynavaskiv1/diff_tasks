@@ -19,7 +19,7 @@ class Person(AttrDisplay):
         self.pay = int(self.pay * (1 + percent))
 
     def __str__(self):
-        return '[Person: {}, {}]'.format(self.name, self.pay)
+        return "[Person: {}, {}]".format(self.name, self.pay)
 
 
 class Manager(Person):
@@ -28,44 +28,44 @@ class Manager(Person):
     """
 
     def __init__(self, name, pay):
-        Person.__init__(self, name, 'mgr', pay)
+        Person.__init__(self, name, "mgr", pay)
 
-    def giveRaise(self, percent, bonus=.10):
+    def giveRaise(self, percent, bonus=0.10):
         Person.giveRaise(self, percent + bonus)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # тільки коли файл запускається для тестування
-    bob = Person('Bob Smith', 'QA', 20000)
-    sue = Person('Sue Jones', 'AQA', 25000)
-    jak = Person('Jak', job='Dev', pay=40000)
+    bob = Person("Bob Smith", "QA", 20000)
+    sue = Person("Sue Jones", "AQA", 25000)
+    jak = Person("Jak", job="Dev", pay=40000)
     print(bob)
     print(sue)
     print(bob.name, bob.job, bob.pay)
     print(sue.name, sue.job, sue.pay)
     print(jak.name, jak.job, jak.pay)
 
-    print('----------------------------------')
-    print('Surname is ', bob.name.split()[-1])
+    print("----------------------------------")
+    print("Surname is ", bob.name.split()[-1])
     sue.pay *= 1.1
-    print('Sue new pay is ', round(sue.pay, 5))
+    print("Sue new pay is ", round(sue.pay, 5))
 
-    print('----------------------------------')
+    print("----------------------------------")
     print(bob.last_name(), sue.last_name())
     print(sue.giveRaise(0.1))
     print(sue.pay)
     print(sue)
 
-    print('----------------------------------')
-    tom = Manager('Tom Jones', 50000)
-    tom.giveRaise(.20)
+    print("----------------------------------")
+    tom = Manager("Tom Jones", 50000)
+    tom.giveRaise(0.20)
     print(tom.last_name())
     print(tom)
 
-    print('-----All three-----')
+    print("-----All three-----")
     # поліморфізм, залежність методу giveRaise до об*єкта до якого він відноситься
     for obj in (bob, sue):
-        obj.giveRaise(.10)
+        obj.giveRaise(0.10)
         print(obj)
 
 

@@ -4,7 +4,6 @@ Single responsibility principle - Кожен об'єкт має виконува
 
 
 class IraName:
-
     def __init__(self, name):
         self.name = name
 
@@ -13,7 +12,6 @@ class IraName:
 
 
 class IraSurname:
-
     def __init__(self, surname):
         self.surname = surname
 
@@ -21,8 +19,8 @@ class IraSurname:
         return self.surname
 
 
-n = IraName('irynka-kanfetka')
+n = IraName("irynka-kanfetka")
 print(n.return_name())
 
-m = IraSurname('va')
+m = IraSurname("va")
 print(m.get_surname())
