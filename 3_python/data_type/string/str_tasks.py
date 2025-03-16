@@ -1,4 +1,4 @@
-a = 'KSJFVN;AKJENGFVAKEJGFN'
+a = "KSJFVN;AKJENGFVAKEJGFN"
 print(a.isupper())
 print(a.isalnum())
 
@@ -36,7 +36,7 @@ while a < 100:
         a += 1
         continue
     else:
-        'is not true'
+        "is not true"
 
 # таск для себе
 i = 0
@@ -49,10 +49,10 @@ for i in range(2, 100, 2):
 a1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 while a1 % 2 == 0:
-    print('непане число')
+    print("непане число")
     break
 else:
-    print('is not парні numbers')
+    print("is not парні numbers")
 
 
 # 4.  Створити список, який містить елементи цілочисельного типу,
@@ -84,6 +84,6 @@ while i < 10:
 # 6.  Створити список, що складається з чотирьох елементів типу string.
 # Потім, за допомогою циклу for, вивести елементи по черзі на екран.
 
-a = ['1', '2', '3', '4']
+a = ["1", "2", "3", "4"]
 for i in a:
     print(i)

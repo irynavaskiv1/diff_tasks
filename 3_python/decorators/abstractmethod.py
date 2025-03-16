@@ -13,9 +13,11 @@ class Super(metaclass=ABCMeta):
 # in this step we can not create instance of class Super,  x = Super()
 # because we not write logic of abstract class
 
+
 class Sub(Super):
     def action(self):
-        print('spam')
+        print("spam")
+
 
 # now we can create instance, we have logic in abstract method
 

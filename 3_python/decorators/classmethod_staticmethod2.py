@@ -1,5 +1,4 @@
 class Methods:
-
     def imeth(self, x):
         print(self, x)
 
