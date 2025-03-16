@@ -1,5 +1,5 @@
-f = open('/home/iryna/Desktop/test2.txt', 'r+')
-f.write('hello Iryna')
+f = open("/home/iryna/Desktop/test2.txt", "r+")
+f.write("hello Iryna")
 print(f.read())
 
 
